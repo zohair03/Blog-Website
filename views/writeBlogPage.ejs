@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+
+<div class="writeBlogContainer">
+
+  <form class="formContainer" action="/createBlog" method="POST">
+    <div class="formItemContainer" >
+      <label class="item1" for="title">Author:</label>
+      <input
+        class="item2"
+        type="text"
+        name="author"
+        placeholder="Blog Heading"
+      />
+    </div>
+
+    <div class="formItemContainer">
+      <label class="item1" for="title">Title:</label>
+      <input
+        class="item2"
+        type="text"
+        name="title"
+        placeholder="Blog Heading"
+      />
+    </div>
+
+    <div class="formItemContainer">
+      <textarea class="item3" name="content"></textarea>
+    </div>
+    <input class="item4 button" type="submit" value="Post New Blog" />
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

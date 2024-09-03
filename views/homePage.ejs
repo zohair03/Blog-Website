@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+  <% if(locals.data && data.length!=0) { %> <% for(var i = 0; i < data.length;i++) { %>
+  <div class="blogCard">
+    <h2><%= data[i].title %></h2>
+    <h3>by <%= data[i].author %></h3>
+    <hr>
+    <p><%= data[i].content %></p>
+
+    <div class="flexContainer">
+      <!-- For delete blog -->
+      <form action="/" method="POST">
+        <input type="hidden" name="index" value="<%= i %>" />
+        <button class="delete button noMarginButton " type="submit">
+          Delete Post
+        </button>
+      </form>
+      <!-- For edit blog -->
+      <form action="/edit" method="POST">
+        <input type="hidden" name="index" value="<%= i %>" />
+        <button class="button noMarginButton" type="submit">Edit Post</button>
+      </form>
+    </div>
+  </div>
+  <% } %> <% } else { %>
+  <h2>No Blogs writen</h2>
+  <p>create your own blog !!</p>
+  <p>create your own blog !!</p>
+  <p>create your own blog !!</p>
+  <% } %>
+</div>
+
+<%- include("partials/footer.ejs") %>

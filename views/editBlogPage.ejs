@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs") %>
+
+<div class="writeBlogContainer">
+
+  <form class="formContainer" action="/updatePost" method="POST">
+    <div class="formItemContainer">
+      <label class="item1" for="title">Author: </label>
+      <input
+        class="item2"
+        type="text"
+        name="author"
+        placeholder="Blog Heading"
+        value="<%= author %>"
+      />
+    </div>
+
+    <div class="formItemContainer">
+      <label class="item1" for="title">Title: </label>
+      <input
+        class="item2"
+        type="text"
+        name="title"
+        placeholder="Blog Heading"
+        value="<%= title%>"
+      />
+    </div>
+
+    <div class="formItemContainer">
+      <textarea class="item3" name="content"> <%=  content%> </textarea>
+    </div>
+    <input type="hidden" name="index" value="<%= index %>" />
+    <input class="item4 button" type="submit" value="Update Post" />
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,139 @@
+.delete:hover {
+
+    background-color: red;
+    color: white;
+}
+
+.button {
+    border-radius: 2rem;
+    padding: 12px;
+    margin: 20px;
+    color: #FFA62F;
+    background-color: white;
+    font-weight: lighter;
+}
+
+.noMarginButton {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.delete {
+    color: red;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    min-height: 86vh;
+    padding-top: 76px;
+}
+
+.writeBlogContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    min-height: 86vh;
+    padding-top: 76px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    margin-top: 20px;
+    gap: 7px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.formItemContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.item1 {
+    align-content: center;
+    min-width: 59px;
+
+}
+
+.item2 {
+    border-radius: 10px;
+    padding: 7px;
+    height: 30px;
+    flex-basis: 1024px;
+}
+
+.item3 {
+    border-radius: 10px;
+    padding: 10px;
+    flex-basis: 1024px;
+    margin-left: 60px;
+    height: 300px;
+}
+
+.blogCard {
+    border: solid black 2px;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    background-color: white;
+}
+
+.blogCard>h2,
+h3 {
+    display: inline;
+}
+
+.blogCard>h2 {
+    font-size: 2rem;
+}
+
+.navBar {
+    display: flex;
+    background-color: #ffefd9f7;
+    position: fixed;
+    margin-top: -20px;
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+
+.navBar h1 {
+    margin-left: 20px;
+    margin-right: auto;
+    color: #FFA62F;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 6px;
+    font-size: 3rem;
+}
+
+.navBarButtons {
+    align-content: center;
+}
+
+body {
+    margin: 0;
+    background-color: #ffe8c869;
+}
+
+footer {
+    background-color: #ffe8c891;
+    height: 51px;
+    align-content: center;
+    border-top: solid 1px black;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
