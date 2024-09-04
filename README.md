@@ -1,6 +1,8 @@
 # Blog-Website
 This is a basic Blogging webapp which allow user to create read update & delete blog post and it is a responsive compatible to all screen size.
 
+link: https://blogszone.onrender.com/
+
 few screen shots:
 
 Home Page:
